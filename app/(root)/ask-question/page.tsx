@@ -7,7 +7,7 @@ import { getUserById } from "@/lib/actions/user.action";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ask a Question — DevOverflow",
+  title: "Ask a Question — AlumniCo.in",
 };
 
 const Page = async () => {

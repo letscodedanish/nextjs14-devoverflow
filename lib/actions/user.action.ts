@@ -60,7 +60,7 @@ export async function deleteUser(params: DeleteUserParams) {
 
     const { clerkId } = params;
 
-    const user = await User.findOneAndDelete({ clerkId });
+    const user = await User.findOneAndDelete({ clerkId }) as unknown as { _id: string };
 
     if (!user) {
       throw new Error("User not found");
